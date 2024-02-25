@@ -1,15 +1,5 @@
-import { useState } from 'react'
-
-import './App.css'
-
 function App() {
-
-
-  return (
-    <>
-    ECO HOUSE
-    </>
-  )
+  return <></>;
 }
 
-export default App
+export default App;
