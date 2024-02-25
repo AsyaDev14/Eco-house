@@ -19,6 +19,7 @@ export const Subtitle = styled.h3`
   font-weight: 400;
   line-height: 1;
   padding-bottom: 60px;
+  margin: 0;
   text-align: left;
 `;
 export const TextWrapper = styled.div`
@@ -60,6 +61,7 @@ export const TypicalButton = styled.button`
   justify-content: center;
   align-items: center;
 
+  color: #f8f8f8;
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 500;
@@ -69,6 +71,8 @@ export const TypicalButton = styled.button`
   border-radius: 50%;
   width: 229px;
   height: 229px;
+
+  padding: 10px;
 
   position: absolute;
   top: 0;
@@ -86,9 +90,12 @@ export const IndividualButton = styled.button`
   font-weight: 500;
 
   background-color: #f8f8f8;
+  border: none;
   border-radius: 50%;
   width: 229px;
   height: 229px;
+
+  padding: 0;
 
   position: absolute;
   top: 0;
