@@ -90,9 +90,12 @@ export const IndividualButton = styled.button`
   font-weight: 500;
 
   background-color: #f8f8f8;
+  border: none;
   border-radius: 50%;
   width: 229px;
   height: 229px;
+
+  padding: 0;
 
   position: absolute;
   top: 0;
