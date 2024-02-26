@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import "./App.css";
+// import "./App.css";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Offers from "./components/offers/Offers";
@@ -23,7 +23,6 @@ function App() {
       <Footer />
     </>
   );
-
 }
 
 export default App;
