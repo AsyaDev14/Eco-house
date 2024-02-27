@@ -31,7 +31,7 @@ const Portfolio = () => {
           <Caption>Проєкт будинку Осиково</Caption>
         </ProjectWrapper>
         <div>
-          <img src={project3} alt="Project 3" width={870} height={959} />
+          <img src={project3} alt="Project 3" width={870} height={937} />
           <Caption>Індивідуальний проект будинку Осикове</Caption>
         </div>
         <Button>Записатись на перегляд будівництва</Button>

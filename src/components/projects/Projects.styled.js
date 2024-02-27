@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 
   padding-top: 100px;
+  padding-bottom: 150px;
 `;
 
 export const Subtitle = styled.h3`
@@ -77,6 +78,13 @@ export const TypicalButton = styled.button`
   position: absolute;
   top: 0;
   right: 0;
+
+  &:hover,
+  &:active {
+    color: #1d1d1d;
+    background-color: #f8f8f8;
+    border: none;
+  }
 `;
 
 export const IndividualButton = styled.button`
@@ -88,6 +96,7 @@ export const IndividualButton = styled.button`
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 500;
+  line-height: 1.3;
 
   background-color: #f8f8f8;
   border: none;
@@ -100,4 +109,11 @@ export const IndividualButton = styled.button`
   position: absolute;
   top: 0;
   right: 0;
+
+  &:hover,
+  &:active {
+    color: #fbfbfb;
+    background-color: transparent;
+    border: 1px solid #f8f8f8;
+  }
 `;
