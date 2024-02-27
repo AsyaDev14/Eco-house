@@ -2,19 +2,21 @@ import React from "react";
 import Container from "../Container/Containerl";
 import {
   HeaderBox,
+  ImgWrapper,
   NavButton,
+  NavLabel,
   NavLink,
   NavList,
   NavSelect,
 } from "./Header.styled";
+import logo from "../../images/hero/logo.png";
 const Header = () => {
   return (
     <Container>
       <HeaderBox>
-        <p>
-          eco house
-          <span>build with love</span>
-        </p>
+        <a href="/index.html">
+          <ImgWrapper src={logo} alt="" />
+        </a>
         <nav>
           <NavList>
             <li>
@@ -36,7 +38,7 @@ const Header = () => {
               <NavLink href="#portfolio">Портфоліо</NavLink>
             </li>
             <li>
-              <label htmlFor="UA">UA</label>
+              <NavLabel htmlFor="UA">UA</NavLabel>
               <NavSelect name="UA" id="UA"></NavSelect>
             </li>
             <li>
