@@ -1,4 +1,8 @@
 import styled from "styled-components";
+
+export const Wrapper = styled.div`
+  margin-bottom: 150px;
+`;
 export const HeroTittle = styled.p`
   margin-top: 100px;
   font-size: 224px;
