@@ -20,7 +20,7 @@ import Container from "../Container/Container";
 const Projects = () => {
   return (
     <Container>
-      <Title>Будинки за проектами</Title>
+      <Title id="projects">Будинки за проектами</Title>
       <hr />
       <div>
         <Wrapper>

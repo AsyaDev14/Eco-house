@@ -36,6 +36,7 @@ export const Button = styled.button`
   font-weight: 500;
   line-height: 1.3;
 
+  color: #f8f8f8;
   background-color: transparent;
   border: 1px solid #f8f8f8;
   border-radius: 50%;
@@ -46,6 +47,8 @@ export const Button = styled.button`
   position: absolute;
   bottom: 0;
   left: 0;
+
+  transition: all 0.7s ease-in-out;
 
   &:hover,
   &:active {
@@ -65,6 +68,7 @@ export const ButtonBuilt = styled.button`
   font-weight: 500;
   line-height: 1.3;
 
+  color: #f8f8f8;
   background-color: transparent;
   border: 1px solid #f8f8f8;
   border-radius: 50%;
@@ -75,6 +79,8 @@ export const ButtonBuilt = styled.button`
   position: absolute;
   top: 0;
   right: 7px;
+
+  transition: all 0.7s ease-in-out;
 
   &:hover,
   &:active {

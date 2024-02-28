@@ -19,7 +19,7 @@ import {
 const Portfolio = () => {
   return (
     <Container>
-      <Title>Портфоліо</Title>
+      <Title id="portfolio">Портфоліо</Title>
       <hr />
       <PortfolioWrapper1>
         <ProjectWrapper>
