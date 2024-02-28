@@ -15,7 +15,7 @@ import {
   TypicalButton,
   Wrapper,
 } from "./Projects.styled";
-import Container from "../Container/Containerl";
+import Container from "../Container/Container";
 
 const Projects = () => {
   return (
