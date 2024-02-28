@@ -1,5 +1,5 @@
 // import React from "react";
-import Container from "../Container/Containerl";
+import Container from "../Container/Container";
 import project1 from "../../images/portfolio/portfolio1.jpg";
 import project2 from "../../images/portfolio/portfolio2.jpg";
 import project3 from "../../images/portfolio/portfolio3.jpg";

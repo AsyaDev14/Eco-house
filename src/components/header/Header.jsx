@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../Container/Containerl";
+import Container from "../Container/";
 import {
   HeaderBox,
   ImgWrapper,
