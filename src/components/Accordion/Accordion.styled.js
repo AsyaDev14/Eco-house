@@ -4,6 +4,10 @@ export const AccordionItem = styled.div`
   min-width: 861px;
   height: 197px;
 
+  &:last-of-type {
+    border-bottom: 1px solid #f8f8f8;
+  }
+
   .accordion {
     display: flex;
     align-items: center;
@@ -12,7 +16,7 @@ export const AccordionItem = styled.div`
     border-top: 1px solid #fbfbfb;
     /* border-bottom: 1px solid #fbfbfb; */
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
 
     &:nth-child(4n + 4) {
       /* border-bottom: 1px solid #fbfbfb; */
@@ -51,10 +55,17 @@ export const AccordionItem = styled.div`
       border-radius: 117px;
       padding: 14px 28px;
       user-select: none;
-      transition: all 0.3s ease;
+      transition: all 0.7s ease;
 
       text-transform: uppercase;
       font-size: 24px;
+
+      transition: all 0.7s ease-in-out;
+
+      &:hover {
+        color: #1d1d1d;
+        background-color: #fbfbfb;
+      }
     }
   }
 
