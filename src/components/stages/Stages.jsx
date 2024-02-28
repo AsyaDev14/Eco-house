@@ -1,4 +1,4 @@
-import Container from "../Container/Containerl";
+import Container from "../Container/Container";
 import { AccordionWpapper, Title } from "./Stages.styled";
 import Accordion from "../Accordion/Accordion";
 

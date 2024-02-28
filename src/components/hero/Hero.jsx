@@ -1,6 +1,6 @@
 import React from "react";
 import hero from "../../images/hero/hero.jpeg";
-import Container from "../Container/Containerl";
+import Container from "../Container/Container";
 import {
   HeroButton,
   HeroImg,
