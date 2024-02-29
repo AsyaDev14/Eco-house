@@ -10,9 +10,22 @@ export const Title = styled.h2`
   padding-bottom: 80px;
 `;
 
+export const AllStagesWrapper = styled.div`
+  padding-bottom: 150px;
+`;
+
 export const PairWpapper = styled.div`
   display: flex;
   gap: 38px;
+`;
+
+export const LastPairWrapper = styled.div`
+  display: flex;
+  gap: 38px;
+
+  div {
+    border-bottom: 1px solid #fbfbfb;
+  }
 `;
 
 export const StageWrapper = styled.div`
@@ -21,6 +34,8 @@ export const StageWrapper = styled.div`
 
   display: flex;
   align-items: center;
+
+  border-top: 1px solid #fbfbfb;
 
   p {
     color: #858585;
@@ -92,9 +107,10 @@ export const DetailsWrapper = styled.div`
     border: none;
     border-radius: 50%;
 
-    font-size: 36px;
+    font-size: 24px;
 
     width: 60px;
     height: 60px;
+    padding: 0;
   }
 `;

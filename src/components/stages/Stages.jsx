@@ -6,6 +6,8 @@ import {
   PairWpapper,
   StageWrapper,
   Title,
+  LastPairWrapper,
+  AllStagesWrapper,
 } from "./Stages.styled";
 // import Accordion from "../Accordion/Accordion";
 // AccordionWpapper,
@@ -52,14 +54,18 @@ const Stages = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
+  const openAccordion = () => {
+    setIsOpen(true);
+  };
+
+  const closeAccordion = () => {
+    setIsOpen(false);
   };
 
   return (
     <Container>
       <Title>Етапи будівництва</Title>
-      <div>
+      <AllStagesWrapper>
         {isOpen ? (
           <DetailsWrapper>
             <p>/01</p>
@@ -70,19 +76,19 @@ const Stages = () => {
               недоліки кожної технології, врахують геологічне розташування
               ділянки, фізико-хімічні характеристики матеріалів та ін. деталі.
             </p>
-            <button onClick={toggleAccordion}>X</button>
+            <button onClick={closeAccordion}>&#10005;</button>
           </DetailsWrapper>
         ) : (
           <PairWpapper>
             <StageWrapper>
               <p>/01</p>
               <h4>Вибір технології</h4>
-              <OpenButton onClick={toggleAccordion}>Детальніше</OpenButton>
+              <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
             </StageWrapper>
             <StageWrapper>
               <p>/05</p>
               <h4>Початок робіт</h4>
-              <OpenButton onClick={toggleAccordion}>Детальніше</OpenButton>
+              <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
             </StageWrapper>
           </PairWpapper>
         )}
@@ -90,39 +96,39 @@ const Stages = () => {
           <StageWrapper>
             <p>/02</p>
             <h4>Підбір або створення проекту</h4>
-            <OpenButton onClick={toggleAccordion}>Детальніше</OpenButton>
+            <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
           </StageWrapper>
           <StageWrapper>
             <p>/06</p>
             <h4>Технагляд і фотозвіт</h4>
-            <OpenButton onClick={toggleAccordion}>Детальніше</OpenButton>
+            <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
           </StageWrapper>
         </PairWpapper>
         <PairWpapper>
           <StageWrapper>
             <p>/03</p>
             <h4>Підписання договору</h4>
-            <OpenButton onClick={toggleAccordion}>Детальніше</OpenButton>
+            <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
           </StageWrapper>
           <StageWrapper>
             <p>/07</p>
             <h4>Акт приймання-передачі</h4>
-            <OpenButton onClick={toggleAccordion}>Детальніше</OpenButton>
+            <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
           </StageWrapper>
         </PairWpapper>
-        <PairWpapper>
+        <LastPairWrapper>
           <StageWrapper>
             <p>/04</p>
             <h4>Оформлення дозволів</h4>
-            <OpenButton onClick={toggleAccordion}>Детальніше</OpenButton>
+            <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
           </StageWrapper>
           <StageWrapper>
             <p>/08</p>
             <h4>Передача ключів</h4>
-            <OpenButton onClick={toggleAccordion}>Детальніше</OpenButton>
+            <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
           </StageWrapper>
-        </PairWpapper>
-      </div>
+        </LastPairWrapper>
+      </AllStagesWrapper>
     </Container>
   );
 };
