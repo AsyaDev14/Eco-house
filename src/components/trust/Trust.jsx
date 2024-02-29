@@ -32,11 +32,13 @@ const Trust = () => {
 
   return (
     <>
-      {trustData.map(({ text, number, title }) => {
-        return (
-          <TrustItem key={number} number={number} title={title} text={text} />
-        );
-      })}
+      <div>
+        {trustData.map(({ text, number, title }) => {
+          return (
+            <TrustItem key={number} number={number} title={title} text={text} />
+          );
+        })}
+      </div>
     </>
   );
 };
