@@ -1,4 +1,8 @@
 import styled from "styled-components";
+
+export const Wrapper = styled.div`
+  margin-bottom: 150px;
+`;
 export const HeroTittle = styled.p`
   margin-top: 100px;
   font-size: 224px;
@@ -37,7 +41,7 @@ export const HeroButton = styled.button`
   font-weight: 500;
   font-size: 24px;
   cursor: pointer;
-  transition: background-color 0.7s, color 0.7s;
+  transition: all 0.7s, color 0.7s;
 
   &:hover {
     border: 15px solid #1d1d1d;
