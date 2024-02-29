@@ -16,7 +16,7 @@ const Footer = () => {
       <hr />
       <FooterWrapper>
         <a href="/index.html">
-          <img src={logo} alt="Logo" width="78px" />
+          <img src={logo} alt="Logo" />
         </a>
         <PartWrapper>
           <Title>Контакти</Title>

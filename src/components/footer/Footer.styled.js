@@ -6,6 +6,10 @@ export const FooterWrapper = styled.div`
   padding: 60px 0 50px;
 
   position: relative;
+
+  img {
+    width: 124px;
+  }
 `;
 
 export const PartWrapper = styled.div`
