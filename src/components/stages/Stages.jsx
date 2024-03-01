@@ -1,133 +1,66 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Container from "../Container/Container";
-import {
-  OpenButton,
-  DetailsWrapper,
-  PairWpapper,
-  StageWrapper,
-  Title,
-  LastPairWrapper,
-  AllStagesWrapper,
-} from "./Stages.styled";
-// import Accordion from "../Accordion/Accordion";
-// AccordionWpapper,
+import { AllStagesWrapper, Title } from "./Stages.styled";
+import Accordion from "../Accordion/Accordion";
 
 const Stages = () => {
-  // const data = [
-  //   { id: "01", title: "Вибір технології", text: "" },
-  //   {
-  //     id: "02",
-  //     title: "Підбір або створення проекту",
-  //     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
-  //   },
-  //   {
-  //     id: "03",
-  //     title: "Підбір або створення проекту",
-  //     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
-  //   },
-  //   {
-  //     id: "04",
-  //     title: "Підбір або створення проекту",
-  //     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
-  //   },
-  //   {
-  //     id: "05",
-  //     title: "Підбір або створення проекту",
-  //     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
-  //   },
-  //   {
-  //     id: "06",
-  //     title: "Підбір або створення проекту",
-  //     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
-  //   },
-  //   {
-  //     id: "07",
-  //     title: "Підбір або створення проекту",
-  //     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
-  //   },
-  //   {
-  //     id: "08",
-  //     title: "Підбір або створення проекту",
-  //     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
-  //   },
-  // ];
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const openAccordion = () => {
-    setIsOpen(true);
-  };
-
-  const closeAccordion = () => {
-    setIsOpen(false);
-  };
+  const data = [
+    {
+      id: "01",
+      title: "Вибір технології",
+      text: "Будівельна компанія котеджів Eco House з розумінням ставиться до вибору клієнта. Співробітники в деталях опишуть переваги і недоліки кожної технології, врахують геологічне розташування ділянки, фізико-хімічні характеристики матеріалів та ін. деталі.",
+    },
+    {
+      id: "02",
+      title: "Підбір або створення проекту",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+    {
+      id: "03",
+      title: "Підписання договору",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+    {
+      id: "04",
+      title: "Оформлення дозволів",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+    {
+      id: "05",
+      title: "Початок робіт",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+    {
+      id: "06",
+      title: "Технагляд і фотозвіт",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+    {
+      id: "07",
+      title: "Акт приймання-передачі",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+    {
+      id: "08",
+      title: "Передача ключів",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+  ];
 
   return (
     <Container>
       <Title>Етапи будівництва</Title>
       <AllStagesWrapper>
-        {isOpen ? (
-          <DetailsWrapper>
-            <p>/01</p>
-            <h4>Вибір технології</h4>
-            <p>
-              Будівельна компанія котеджів Eco House з розумінням ставиться до
-              вибору клієнта. Співробітники в деталях опишуть переваги і
-              недоліки кожної технології, врахують геологічне розташування
-              ділянки, фізико-хімічні характеристики матеріалів та ін. деталі.
-            </p>
-            <button onClick={closeAccordion}>&#10005;</button>
-          </DetailsWrapper>
-        ) : (
-          <PairWpapper>
-            <StageWrapper>
-              <p>/01</p>
-              <h4>Вибір технології</h4>
-              <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
-            </StageWrapper>
-            <StageWrapper>
-              <p>/05</p>
-              <h4>Початок робіт</h4>
-              <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
-            </StageWrapper>
-          </PairWpapper>
-        )}
-        <PairWpapper>
-          <StageWrapper>
-            <p>/02</p>
-            <h4>Підбір або створення проекту</h4>
-            <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
-          </StageWrapper>
-          <StageWrapper>
-            <p>/06</p>
-            <h4>Технагляд і фотозвіт</h4>
-            <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
-          </StageWrapper>
-        </PairWpapper>
-        <PairWpapper>
-          <StageWrapper>
-            <p>/03</p>
-            <h4>Підписання договору</h4>
-            <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
-          </StageWrapper>
-          <StageWrapper>
-            <p>/07</p>
-            <h4>Акт приймання-передачі</h4>
-            <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
-          </StageWrapper>
-        </PairWpapper>
-        <LastPairWrapper>
-          <StageWrapper>
-            <p>/04</p>
-            <h4>Оформлення дозволів</h4>
-            <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
-          </StageWrapper>
-          <StageWrapper>
-            <p>/08</p>
-            <h4>Передача ключів</h4>
-            <OpenButton onClick={openAccordion}>Детальніше</OpenButton>
-          </StageWrapper>
-        </LastPairWrapper>
+        {data.map(({ id, title, text }) => {
+          return (
+            <Accordion
+              key={id}
+              number={id}
+              title={title}
+              text={text}
+            ></Accordion>
+          );
+        })}
       </AllStagesWrapper>
     </Container>
   );
