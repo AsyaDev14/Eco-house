@@ -41,7 +41,7 @@ export const HeroButton = styled.button`
   font-weight: 500;
   font-size: 24px;
   cursor: pointer;
-  transition: all 0.7s, color 0.7s;
+  transition: all 0.7s;
 
   &:hover {
     border: 15px solid #1d1d1d;

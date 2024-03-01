@@ -11,7 +11,7 @@ export const OffersSubTit = styled.p`
   color: #858585;
   font-size: 22px;
   font-weight: 400;
-  padding: 140px 70px 0 0;
+  padding: 220px 70px 0 0;
 `;
 
 export const OffersBuild = styled.p`
@@ -51,60 +51,25 @@ export const OffersButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 500;
-
   background-color: ${(props) => props.$bgc || "transparent"};
   color: ${(props) => props.$col || "#f8f8f8"};
-
   border: 1px solid #f8f8f8;
   border-radius: 50%;
   width: 229px;
   height: 229px;
-
   padding: 10px;
-
   position: absolute;
   top: 0;
   right: 0;
+  transition: all 0.7s;
 
   &:hover,
   &:active {
-    color: ${(props) => props.$hovcol || "#F8F8F8"};
-    background-color: ${(props) => props.$hovbgc || "#f8f8f8"} #f8f8f8;
-    border: ${(props) => props.$bord || "none"} none;
+    color: ${(props) => props.$hovcol || "#1D1D1D"};
+    background-color: ${(props) => props.$hovbgc || "#f8f8f8"};
+    border: ${(props) => props.$bord || "none"};
   }
 `;
-
-// export const IndividualButton = styled.button`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   color: #1d1d1d;
-//   text-transform: uppercase;
-//   font-size: 22px;
-//   font-weight: 500;
-//   line-height: 1.3;
-
-//   background-color: #f8f8f8;
-//   border: none;
-//   border-radius: 50%;
-//   width: 229px;
-//   height: 229px;
-
-//   padding: 0;
-
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-
-//   &:hover,
-//   &:active {
-//     color: #fbfbfb;
-//     background-color: transparent;
-//     border: 1px solid #f8f8f8;
-//   }
-// `;
