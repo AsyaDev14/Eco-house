@@ -1,10 +1,12 @@
 import React from "react";
 import TrustItem from "./TrustItem";
+import Container from "../Container/Container";
+import { TrustWrapper } from "./Trust.styled";
 
 const Trust = () => {
   const trustData = [
     {
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos tempore doloribus molestias id amet soluta sunt consequatur! Quas, nam!",
+      text: "Займаємося будівництвом приватних будинків в Києві і області з 2011 року. За цей час підібрали в штат співробітників з вузькопрофільними спеціальностями, які відмінно зарекомендували себе як професіонали. Їм можна довірити будівництво будинку `під ключ` будь-якої складності.",
       number: "01",
       title: "Екологічність",
     },
@@ -32,13 +34,13 @@ const Trust = () => {
 
   return (
     <>
-      <div>
+      <Container>
         {trustData.map(({ text, number, title }) => {
           return (
             <TrustItem key={number} number={number} title={title} text={text} />
           );
         })}
-      </div>
+      </Container>
     </>
   );
 };
