@@ -39,6 +39,7 @@ export const OpenButton = styled.button`
   border-radius: 30px;
   background-color: transparent;
 
+  color: #fbfbfb;
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -51,46 +52,99 @@ export const DetailsWrapper = styled.div`
   justify-content: space-between;
   padding: 40px 80px;
 
+  position: absolute;
+  top: 0;
+  left: 0;
+
   z-index: 10;
   width: 1760px;
+  /* width: 1000px; */
   height: 150px;
 
   color: #1d1d1d;
   background-color: #fbfbfb;
 
-  &:nth-of-type(-n + 4) {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  &:nth-last-of-type(n + 5) {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
   h4 {
     font-size: 50px;
     font-weight: 400;
 
-    width: 900px;
+    width: 550px;
 
-    padding-right: 29px;
+    /* padding-right: 29px; */
   }
 
   p {
     font-size: 24px;
     font-weight: 400;
 
-    width: 574px;
+    width: 750px;
 
-    padding-right: 88px;
+    /* padding-right: 80px; */
 
     &:first-of-type {
       color: #858585;
       font-size: 50px;
-      padding-right: 150px;
+      padding-right: 80px;
+      width: auto;
+    }
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fbfbfb;
+    background-color: #1d1d1d;
+    border: none;
+    border-radius: 50%;
+
+    font-size: 24px;
+
+    width: 60px;
+    height: 60px;
+    padding: 0;
+  }
+`;
+
+export const DetailsRightWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  z-index: 10;
+  width: 1760px;
+  /* width: 1000px; */
+  height: 150px;
+
+  color: #1d1d1d;
+  background-color: #fbfbfb;
+
+  h4 {
+    font-size: 50px;
+    font-weight: 400;
+
+    width: 550px;
+
+    /* padding-right: 29px; */
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+
+    width: 750px;
+
+    /* padding-right: 80px; */
+
+    &:first-of-type {
+      color: #858585;
+      font-size: 50px;
+      padding-right: 80px;
       width: auto;
     }
   }

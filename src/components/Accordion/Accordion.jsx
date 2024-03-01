@@ -1,10 +1,6 @@
 import { useState } from "react";
-import // AccordionItem,
-// Number,
-// StageTitle,
-// StageTitleWrapper,
-"./Accordion.styled";
 import {
+  DetailsRightWrapper,
   DetailsWrapper,
   OpenButton,
   StageWrapper,
@@ -21,18 +17,26 @@ const Accordion = ({ number, title, text }) => {
   return (
     <Wrapper>
       <StageWrapper>
-        <p>/{number}</p>
+        <p>/0{number}</p>
         <h4>{title}</h4>
         <OpenButton onClick={toggleAccordion}>Детальніше</OpenButton>
       </StageWrapper>
-      {isOpen && (
-        <DetailsWrapper>
-          <p>/{number}</p>
-          <h4>{title}</h4>
-          <p>{text}</p>
-          <button onClick={toggleAccordion}>&#10005;</button>
-        </DetailsWrapper>
-      )}
+      {isOpen &&
+        (number < 4 ? (
+          <DetailsWrapper>
+            <p>/0{number}</p>
+            <h4>{title}</h4>
+            <p>{text}</p>
+            <button onClick={toggleAccordion}>&#10005;</button>
+          </DetailsWrapper>
+        ) : (
+          <DetailsRightWrapper>
+            <p>/0{number}</p>
+            <h4>{title}</h4>
+            <p>{text}</p>
+            <button onClick={toggleAccordion}>&#10005;</button>
+          </DetailsRightWrapper>
+        ))}
     </Wrapper>
   );
 };

@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import Container from "../Container/Container";
 import { AllStagesWrapper, Title } from "./Stages.styled";
 import Accordion from "../Accordion/Accordion";
@@ -6,42 +5,42 @@ import Accordion from "../Accordion/Accordion";
 const Stages = () => {
   const data = [
     {
-      id: "01",
+      id: 1,
       title: "Вибір технології",
       text: "Будівельна компанія котеджів Eco House з розумінням ставиться до вибору клієнта. Співробітники в деталях опишуть переваги і недоліки кожної технології, врахують геологічне розташування ділянки, фізико-хімічні характеристики матеріалів та ін. деталі.",
     },
     {
-      id: "02",
+      id: 2,
       title: "Підбір або створення проекту",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
     },
     {
-      id: "03",
+      id: 3,
       title: "Підписання договору",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
     },
     {
-      id: "04",
+      id: 4,
       title: "Оформлення дозволів",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
     },
     {
-      id: "05",
+      id: 5,
       title: "Початок робіт",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
     },
     {
-      id: "06",
+      id: 6,
       title: "Технагляд і фотозвіт",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
     },
     {
-      id: "07",
+      id: 7,
       title: "Акт приймання-передачі",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
     },
     {
-      id: "08",
+      id: 8,
       title: "Передача ключів",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
     },
