@@ -79,6 +79,8 @@ export const TypicalButton = styled.button`
   top: 0;
   right: 0;
 
+  transition: all 0.7s ease-in-out;
+
   &:hover,
   &:active {
     color: #1d1d1d;
@@ -109,6 +111,8 @@ export const IndividualButton = styled.button`
   position: absolute;
   top: 0;
   right: 0;
+
+  transition: all 0.7s ease-in-out;
 
   &:hover,
   &:active {
