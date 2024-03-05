@@ -1,74 +1,66 @@
 import Container from "../Container/Container";
-import { AccordionWpapper, Title } from "./Stages.styled";
+import { AllStagesWrapper, Title } from "./Stages.styled";
 import Accordion from "../Accordion/Accordion";
 
 const Stages = () => {
+  const data = [
+    {
+      id: 1,
+      title: "Вибір технології",
+      text: "Будівельна компанія котеджів Eco House з розумінням ставиться до вибору клієнта. Співробітники в деталях опишуть переваги і недоліки кожної технології, врахують геологічне розташування ділянки, фізико-хімічні характеристики матеріалів та ін. деталі.",
+    },
+    {
+      id: 2,
+      title: "Підбір або створення проекту",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+    {
+      id: 3,
+      title: "Підписання договору",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+    {
+      id: 4,
+      title: "Оформлення дозволів",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+    {
+      id: 5,
+      title: "Початок робіт",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+    {
+      id: 6,
+      title: "Технагляд і фотозвіт",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+    {
+      id: 7,
+      title: "Акт приймання-передачі",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+    {
+      id: 8,
+      title: "Передача ключів",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci reprehenderit voluptatum temporibus natus! Atque culpa illum iste eos vero, incidunt error aliquam perferendis dignissimos eaque voluptates accusamus cum cumque?",
+    },
+  ];
+
   return (
     <Container>
       <Title>Етапи будівництва</Title>
-      <AccordionWpapper>
-        <div>
-          <Accordion title="Вибір технології" number="/01">
-            <p>
-              Будівельна компанія котеджів "Eco House" з розумінням ставиться до
-              вибору клієнта. Співробітники в деталях опишуть переваги і
-              недоліки кожної технології, врахують геологічне розташування
-              ділянки, фізико-хімічні характеристики матеріалів та ін. деталі.
-            </p>
-          </Accordion>
-          <Accordion title="Підбір або створення проекту" number="/02">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              dignissimos tempore doloribus molestias id amet soluta sunt
-              consequatur! Quas, nam!
-            </p>
-          </Accordion>
-          <Accordion title="Підписання договору" number="/03">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              dignissimos tempore doloribus molestias id amet soluta sunt
-              consequatur! Quas, nam!
-            </p>
-          </Accordion>
-          <Accordion title="Оформлення дозволів" number="/04">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              dignissimos tempore doloribus molestias id amet soluta sunt
-              consequatur! Quas, nam!
-            </p>
-          </Accordion>
-        </div>
-        <div>
-          <Accordion title="Початок робіт" number="/05">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              dignissimos tempore doloribus molestias id amet soluta sunt
-              consequatur! Quas, nam!
-            </p>
-          </Accordion>
-          <Accordion title="Технагляд і фотозвіт" number="/06">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              dignissimos tempore doloribus molestias id amet soluta sunt
-              consequatur! Quas, nam!
-            </p>
-          </Accordion>
-          <Accordion title="Акт приймання-передачі" number="/07">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              dignissimos tempore doloribus molestias id amet soluta sunt
-              consequatur! Quas, nam!
-            </p>
-          </Accordion>
-          <Accordion title="Передача ключів" number="/08">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              dignissimos tempore doloribus molestias id amet soluta sunt
-              consequatur! Quas, nam!
-            </p>
-          </Accordion>
-        </div>
-      </AccordionWpapper>
+      <AllStagesWrapper>
+        {data.map(({ id, title, text }) => {
+          return (
+            <Accordion
+              key={id}
+              number={id}
+              title={title}
+              text={text}
+            ></Accordion>
+          );
+        })}
+      </AllStagesWrapper>
     </Container>
   );
 };

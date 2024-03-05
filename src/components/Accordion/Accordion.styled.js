@@ -1,102 +1,184 @@
 import styled from "styled-components";
 
-export const AccordionItem = styled.div`
-  min-width: 861px;
-  height: 197px;
+export const Wrapper = styled.div`
+  position: relative;
+  /* width: 100%; */
+`;
 
-  &:last-of-type {
-    border-bottom: 1px solid #f8f8f8;
+export const StageWrapper = styled.div`
+  width: 861px;
+  height: 227px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #fbfbfb;
+  border-bottom: 1px solid #fbfbfb;
+  margin-bottom: -2px;
+
+  p {
+    color: #858585;
+    font-size: 50px;
+    font-weight: 400;
+
+    padding-right: 66px;
   }
 
-  .accordion {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border-top: 1px solid #fbfbfb;
-    /* border-bottom: 1px solid #fbfbfb; */
-    overflow: hidden;
-    transition: all 0.7s ease;
+  h4 {
+    font-size: 50px;
+    font-weight: 400;
 
-    &:nth-child(4n + 4) {
-      /* border-bottom: 1px solid #fbfbfb; */
-
-      background-color: aqua;
-    }
-
-    &.active {
-      /* transform: scale(1.03); */
-      border: 1px solid #fbfbfb;
-    }
+    width: 487px;
+    padding-right: 17px;
   }
+`;
 
-  .accordion-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    padding: 15px 20px;
-    cursor: pointer;
+export const OpenButton = styled.button`
+  border: 1px solid #fbfbfb;
+  border-radius: 30px;
+  background-color: transparent;
 
-    &.active {
-      color: #1d1d1d;
-      background-color: #fbfbfb;
-    }
+  color: #fbfbfb;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
 
-    span {
-      width: fit-content;
-      height: 38px;
-      font-size: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid #fbfbfb;
-      border-radius: 117px;
-      padding: 14px 28px;
-      user-select: none;
-      transition: all 0.7s ease;
+  padding: 14px 28px;
 
-      text-transform: uppercase;
-      font-size: 24px;
+  transition: all 0.7s;
 
-      transition: all 0.7s ease-in-out;
-
-      &:hover {
-        color: #1d1d1d;
-        background-color: #fbfbfb;
-      }
-    }
-  }
-
-  .accordion-content {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    text-align: justify;
-    line-height: 26px;
-    height: 100%;
-    padding: 20px;
+  &:hover,
+  &:active {
     color: #1d1d1d;
     background-color: #fbfbfb;
-    border-top: 1px solid #43434a;
   }
 `;
 
-export const StageTitleWrapper = styled.div`
+export const DetailsWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 66px;
+  justify-content: space-between;
+  padding: 40px 80px;
+
+  position: absolute;
+  top: 0;
+  left: -80px;
+  z-index: 10;
+
+  width: 1760px;
+  height: 151px;
+
+  color: #1d1d1d;
+  background-color: #fbfbfb;
+
+  h4 {
+    font-size: 50px;
+    font-weight: 400;
+
+    width: 550px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+
+    width: 750px;
+
+    &:first-of-type {
+      color: #858585;
+      font-size: 50px;
+      padding-right: 80px;
+      width: auto;
+    }
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fbfbfb;
+    background-color: #1d1d1d;
+    border: none;
+    border-radius: 50%;
+
+    font-size: 24px;
+
+    width: 60px;
+    height: 60px;
+    padding: 0;
+
+    transition: all 0.7s;
+
+    &:hover,
+    &:active {
+      color: #1d1d1d;
+      background-color: #fbfbfb;
+      border: 1px solid #1d1d1d;
+    }
+  }
 `;
 
-export const Number = styled.p`
-  color: #858585;
-  font-size: 50px;
-  font-weight: 400;
-`;
+export const DetailsRightWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
 
-export const StageTitle = styled.p`
-  font-size: 50px;
-  font-weight: 400;
+  position: absolute;
+  top: 0;
+  right: -80px;
+  z-index: 10;
+
+  width: 1760px;
+  height: 151px;
+
+  color: #1d1d1d;
+  background-color: #fbfbfb;
+
+  h4 {
+    font-size: 50px;
+    font-weight: 400;
+
+    width: 550px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+
+    width: 750px;
+
+    &:first-of-type {
+      color: #858585;
+      font-size: 50px;
+      padding-right: 80px;
+      width: auto;
+    }
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fbfbfb;
+    background-color: #1d1d1d;
+    border: none;
+    border-radius: 50%;
+
+    font-size: 24px;
+
+    width: 60px;
+    height: 60px;
+    padding: 0;
+
+    transition: all 0.7s;
+
+    &:hover,
+    &:active {
+      color: #fbfbfb;
+      background-color: #1d1d1d;
+      border: 1px solid #fbfbfb;
+    }
+  }
 `;

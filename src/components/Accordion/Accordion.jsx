@@ -1,12 +1,13 @@
 import { useState } from "react";
 import {
-  AccordionItem,
-  Number,
-  StageTitle,
-  StageTitleWrapper,
+  DetailsRightWrapper,
+  DetailsWrapper,
+  OpenButton,
+  StageWrapper,
+  Wrapper,
 } from "./Accordion.styled";
 
-const Accordion = ({ number, title, children }) => {
+const Accordion = ({ number, title, text }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -14,25 +15,29 @@ const Accordion = ({ number, title, children }) => {
   };
 
   return (
-    <AccordionItem>
-      <div className={`accordion ${isOpen ? "active" : ""}`}>
-        <div
-          className={`accordion-header ${isOpen ? "active" : ""}`}
-          onClick={toggleAccordion}
-        >
-          <StageTitleWrapper>
-            <Number>{number}</Number>
-            <StageTitle>{title}</StageTitle>
-          </StageTitleWrapper>
-          <span>{isOpen ? "X" : "Детальніше"}</span>
-        </div>
-        {isOpen && (
-          <div className="accordion-content">
-            <p>{children}</p>
-          </div>
-        )}
-      </div>
-    </AccordionItem>
+    <Wrapper>
+      <StageWrapper>
+        <p>/0{number}</p>
+        <h4>{title}</h4>
+        <OpenButton onClick={toggleAccordion}>Детальніше</OpenButton>
+      </StageWrapper>
+      {isOpen &&
+        (number < 5 ? (
+          <DetailsWrapper>
+            <p>/0{number}</p>
+            <h4>{title}</h4>
+            <p>{text}</p>
+            <button onClick={toggleAccordion}>&#10005;</button>
+          </DetailsWrapper>
+        ) : (
+          <DetailsRightWrapper>
+            <p>/0{number}</p>
+            <h4>{title}</h4>
+            <p>{text}</p>
+            <button onClick={toggleAccordion}>&#10005;</button>
+          </DetailsRightWrapper>
+        ))}
+    </Wrapper>
   );
 };
 
