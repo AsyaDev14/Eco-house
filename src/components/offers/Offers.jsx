@@ -46,6 +46,7 @@ const Offers = () => {
           </ImgWrapper>
         </div>
       </OffersWrapper>
+      {/* another  */}
       <OffersWrapper>
         <OffersSubTit>
           Результат нашої роботи перевершить ваші очікування!
@@ -75,9 +76,9 @@ const Offers = () => {
             <img src={offer4} alt="architect" height="305px" />
             <OffersButton
               type="button"
-              // $bgc="red"
-              $col="#fbfbfb"
-              $hovcol="red"
+              $col="#1d1d1d"
+              $bgc="#f8f8f8"
+              $hovcol="#fbfbfb"
               $hovbgc="transparent"
               $bord="1px solid #f8f8f8"
             >
