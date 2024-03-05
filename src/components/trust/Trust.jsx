@@ -1,7 +1,7 @@
 import React from "react";
 import TrustItem from "./TrustItem";
 import Container from "../Container/Container";
-import { TrustWrapper } from "./Trust.styled";
+import { TrustMain, TrustTittle } from "./Trust.styled";
 
 const Trust = () => {
   const trustData = [
@@ -35,11 +35,19 @@ const Trust = () => {
   return (
     <>
       <Container>
-        {trustData.map(({ text, number, title }) => {
-          return (
-            <TrustItem key={number} number={number} title={title} text={text} />
-          );
-        })}
+        <TrustMain>
+          <TrustTittle>чому нам довіряють?</TrustTittle>
+          {trustData.map(({ text, number, title }) => {
+            return (
+              <TrustItem
+                key={number}
+                number={number}
+                title={title}
+                text={text}
+              />
+            );
+          })}
+        </TrustMain>
       </Container>
     </>
   );

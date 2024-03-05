@@ -32,6 +32,7 @@ export const OffersWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
+  margin-bottom: 150px;
 `;
 
 export const TextWrapper = styled.div`
