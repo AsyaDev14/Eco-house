@@ -22,7 +22,7 @@ const Accordion = ({ number, title, text }) => {
         <OpenButton onClick={toggleAccordion}>Детальніше</OpenButton>
       </StageWrapper>
       {isOpen &&
-        (number < 4 ? (
+        (number < 5 ? (
           <DetailsWrapper>
             <p>/0{number}</p>
             <h4>{title}</h4>

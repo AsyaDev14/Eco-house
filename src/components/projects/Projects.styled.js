@@ -5,6 +5,10 @@ export const Title = styled.h2`
   text-transform: uppercase;
   font-size: 100px;
   font-weight: 400;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 44px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -22,6 +26,11 @@ export const Subtitle = styled.h3`
   padding-bottom: 60px;
   margin: 0;
   text-align: left;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 30px;
+    padding-bottom: 36px;
+  }
 `;
 export const TextWrapper = styled.div`
   display: flex;
@@ -29,9 +38,20 @@ export const TextWrapper = styled.div`
 
   padding-bottom: 60px;
 
-  p {
+  /* p {
     width: 573px;
     text-align: left;
+  } */
+
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 38px;
+
+    padding-bottom: 125px;
+
+    p {
+      width: 100%;
+    }
   }
 `;
 
@@ -42,12 +62,22 @@ export const ImgWrapper = styled.div`
   gap: 20px;
 `;
 
+export const SecondImage = styled.img`
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+`;
+
 export const AdvantageText = styled.p`
   color: #858585;
   font-size: 22px;
   font-weight: 400;
 
   padding: 140px 70px 0 0;
+
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const Description = styled.p`
@@ -55,6 +85,11 @@ export const Description = styled.p`
   font-weight: 400;
 
   width: 573px;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 16px;
+    padding-bottom: 36px;
+  }
 `;
 
 export const TypicalButton = styled.button`
@@ -86,6 +121,14 @@ export const TypicalButton = styled.button`
     color: #1d1d1d;
     background-color: #f8f8f8;
     border: none;
+  }
+
+  @media only screen and (max-width: 767px) {
+    top: -20%;
+    right: 10%;
+
+    background-color: #1d1d1d;
+    margin: 5px;
   }
 `;
 

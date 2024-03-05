@@ -9,6 +9,7 @@ import {
   Description,
   ImgWrapper,
   IndividualButton,
+  SecondImage,
   Subtitle,
   TextWrapper,
   Title,
@@ -49,7 +50,7 @@ const Projects = () => {
                 width={574}
                 height={589}
               />
-              <img
+              <SecondImage
                 src={project2}
                 alt="Typical Project 2"
                 width={573}
@@ -59,7 +60,6 @@ const Projects = () => {
             </ImgWrapper>
           </div>
         </Wrapper>
-
         <Wrapper>
           <AdvantageText>
             Найголовніша перевага індивідуального проекту: всі деталі
@@ -79,7 +79,6 @@ const Projects = () => {
                 клієнта.
               </Description>
             </TextWrapper>
-
             <ImgWrapper>
               <img
                 src={project3}

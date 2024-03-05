@@ -15,6 +15,8 @@ export const AllStagesWrapper = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   column-gap: 38px;
+
+  width: 100%;
   height: 930px;
   padding-bottom: 150px;
 `;

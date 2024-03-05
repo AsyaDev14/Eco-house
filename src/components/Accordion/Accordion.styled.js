@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 `;
 
 export const StageWrapper = styled.div`
-  width: 100%;
+  width: 861px;
   height: 227px;
 
   display: flex;
@@ -45,6 +45,14 @@ export const OpenButton = styled.button`
   text-transform: uppercase;
 
   padding: 14px 28px;
+
+  transition: all 0.7s;
+
+  &:hover,
+  &:active {
+    color: #1d1d1d;
+    background-color: #fbfbfb;
+  }
 `;
 
 export const DetailsWrapper = styled.div`
@@ -54,12 +62,11 @@ export const DetailsWrapper = styled.div`
 
   position: absolute;
   top: 0;
-  left: 0;
-
+  left: -80px;
   z-index: 10;
+
   width: 1760px;
-  /* width: 1000px; */
-  height: 150px;
+  height: 151px;
 
   color: #1d1d1d;
   background-color: #fbfbfb;
@@ -69,8 +76,6 @@ export const DetailsWrapper = styled.div`
     font-weight: 400;
 
     width: 550px;
-
-    /* padding-right: 29px; */
   }
 
   p {
@@ -78,8 +83,6 @@ export const DetailsWrapper = styled.div`
     font-weight: 400;
 
     width: 750px;
-
-    /* padding-right: 80px; */
 
     &:first-of-type {
       color: #858585;
@@ -104,6 +107,15 @@ export const DetailsWrapper = styled.div`
     width: 60px;
     height: 60px;
     padding: 0;
+
+    transition: all 0.7s;
+
+    &:hover,
+    &:active {
+      color: #1d1d1d;
+      background-color: #fbfbfb;
+      border: 1px solid #1d1d1d;
+    }
   }
 `;
 
@@ -114,12 +126,11 @@ export const DetailsRightWrapper = styled.div`
 
   position: absolute;
   top: 0;
-  right: 0;
-
+  right: -80px;
   z-index: 10;
+
   width: 1760px;
-  /* width: 1000px; */
-  height: 150px;
+  height: 151px;
 
   color: #1d1d1d;
   background-color: #fbfbfb;
@@ -129,8 +140,6 @@ export const DetailsRightWrapper = styled.div`
     font-weight: 400;
 
     width: 550px;
-
-    /* padding-right: 29px; */
   }
 
   p {
@@ -138,8 +147,6 @@ export const DetailsRightWrapper = styled.div`
     font-weight: 400;
 
     width: 750px;
-
-    /* padding-right: 80px; */
 
     &:first-of-type {
       color: #858585;
@@ -164,5 +171,14 @@ export const DetailsRightWrapper = styled.div`
     width: 60px;
     height: 60px;
     padding: 0;
+
+    transition: all 0.7s;
+
+    &:hover,
+    &:active {
+      color: #fbfbfb;
+      background-color: #1d1d1d;
+      border: 1px solid #fbfbfb;
+    }
   }
 `;
