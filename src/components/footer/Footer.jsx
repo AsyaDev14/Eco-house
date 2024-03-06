@@ -29,12 +29,14 @@ const Footer = () => {
             <p>Індекс: 01133</p>
             <p>Графік роботи: ПН-ПТ 8:00-17:00</p>
             <p>
-              044 500 09 64
+              <a href="tel:+380445000964">044 500 09 64</a>
               <br />
-              097 007 09 64
+              <a href="tel:+380970070964">097 007 09 64</a>
             </p>
+            <a href="mailto:office@eco-house.kiev.ua">
+              office@eco-house.kiev.ua
+            </a>
           </ContactsWrapper>
-          <p>office@eco-house.kiev.ua</p>
         </PartWrapper>
         <PartWrapper>
           <Title>Послуги</Title>

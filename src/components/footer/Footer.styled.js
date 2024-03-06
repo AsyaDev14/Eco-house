@@ -19,6 +19,10 @@ export const PartWrapper = styled.div`
 
   font-size: 24px;
   font-weight: 300;
+
+  a {
+    font-weight: 300;
+  }
 `;
 
 export const Title = styled.h3`
@@ -39,10 +43,6 @@ export const ServicesWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
-
-  a {
-    font-weight: 300;
-  }
 `;
 
 export const Copyright = styled.p`

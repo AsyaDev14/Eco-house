@@ -176,9 +176,9 @@ export const DetailsRightWrapper = styled.div`
 
     &:hover,
     &:active {
-      color: #fbfbfb;
-      background-color: #1d1d1d;
-      border: 1px solid #fbfbfb;
+      color: #1d1d1d;
+      background-color: #fbfbfb;
+      border: 1px solid #1d1d1d;
     }
   }
 `;
